@@ -1,0 +1,34 @@
+@import "../../../../utils/styles/index.scss";
+
+.background {
+  margin-bottom: 2.0rem;
+  .heart {
+    $heartSize:2rem;
+    height: $heartSize;
+    width: $heartSize;
+    position: absolute;
+    margin-top: 0.5rem;
+    right: 4.5rem;
+    z-index: 9999;
+  }
+  .photo {
+    width: 100%;
+    height: 15rem;
+  }
+  .info{
+    margin: 0.5rem 0;
+    @extend .dFlexSpaceBetween;
+    .title {
+      font-size: 1.4rem;
+      font-weight: 400;
+    }
+    .cost {
+      @extend .title;
+      font-weight: 700;
+    }
+  }
+  .viewDetailsParent {
+    width: 100%;
+    @extend .dFlexCenter;
+  }
+}

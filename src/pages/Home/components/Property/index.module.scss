@@ -1,0 +1,32 @@
+@import "../../../../utils/styles/index.scss";
+
+.background {
+  .heart {
+    $heartSize: 2rem;
+    height: $heartSize;
+    width: $heartSize;
+    position: absolute;
+    margin-top: 0.5rem;
+    right: 4.5rem;
+    z-index: 9999;
+  }
+  .photo {
+    width: 100%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }
+  .info {
+    @extend .dFlexSpaceBetween;
+    margin: -2.2rem 1.5rem 2rem 1.5rem;
+    .title {
+      color: $colorWhite;
+      font-size: 1.4rem;
+      font-weight: 400;
+      z-index: 1;
+    }
+    .cost {
+      @extend .title;
+      font-weight: 700;
+    }
+  }
+}

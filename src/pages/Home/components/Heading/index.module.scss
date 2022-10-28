@@ -1,0 +1,17 @@
+@import "../../../../utils/styles/index.scss";
+
+.background {
+  @media only screen and (max-width: $mobile) {
+    .title {
+      margin-bottom: 3rem;
+    }
+  }
+  @media only screen and (min-width: $mobile) {
+   display: flex;
+   justify-content: space-between;
+  }
+  .title {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+}

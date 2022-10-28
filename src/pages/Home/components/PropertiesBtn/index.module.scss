@@ -1,0 +1,15 @@
+@import "../../../../utils/styles/index.scss";
+
+.background {
+ background: $colorWhite;
+ outline: none;
+ border: 0.1rem solid $colorBlack;
+ padding:1rem 0.5rem;
+ font-size: 1.25rem;
+ font-weight: 600;
+ .arrow {
+  margin-left: 1rem;
+  width: 2rem;
+  height: 0.75rem;
+ }
+}

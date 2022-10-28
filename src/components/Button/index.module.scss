@@ -1,0 +1,9 @@
+@import "../../utils/styles/index.scss";
+
+.background {
+  background: $colorBlack;
+  color: $colorWhite;
+  outline: none;
+  padding: 0.5rem 1rem;
+  border: none;
+}

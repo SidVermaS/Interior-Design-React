@@ -1,0 +1,73 @@
+@import "../../utils/styles/index.scss";
+
+.logo {
+  width: 10rem;
+  height: 2.75rem;
+}
+.text {
+  color: $colorBlack;
+  font-size: 1.55rem;
+  font-weight: 500;
+  margin-right: 3rem;
+}
+.nav {
+  @extend .dFlex;
+  align-items: flex-end;
+  padding: 4rem 2rem 4rem 4rem;
+
+  .menu {
+    @extend .dFlexSpaceBetween;
+    width: 100%;
+    .menuItems {
+      @extend .dFlex;
+      align-items: flex-end;
+      margin-left: 5rem;
+      .link {
+        text-decoration: none;
+        .title {
+          @extend .text;
+          margin-right: 3rem;
+        }
+      }
+    }
+   
+  }
+}
+.navFullHeight {
+  height: 100vh;
+}
+.navMobile {
+  @extend .dFlexDirectionCol;
+  justify-content: space-between;
+  padding: 3rem;
+  .icons {
+    @extend .dFlexSpaceBetween;
+    .hamburgerIcon {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+  .menu {
+    .link {
+      text-decoration: none;
+      .title {
+        @extend .text;
+        font-size: 2.3rem;
+        margin-bottom: 2rem;
+      }
+      .selectedTitle {
+        @extend .title;
+        font-weight: 700;
+        text-decoration: underline;
+      }
+    }
+  }
+  .lang {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  .selectedLang {
+    @extend .lang;
+    font-weight: 700;
+  }
+}

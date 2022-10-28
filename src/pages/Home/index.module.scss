@@ -1,0 +1,60 @@
+@import "../../utils/styles/index.scss";
+
+.desktopZero {
+  height: 20rem;
+}
+.desktopThree {
+
+  margin-top: -2rem;
+  height: 20rem;
+}
+.desktopTwo {
+  height: 22rem;
+}
+.desktopFive {
+  height: 18rem;
+}
+.desktopOne {
+  height: 18rem;
+}
+.desktopFour {
+  margin-top: -4rem;
+  height:22rem;
+}
+.desktopZeroThree {
+  height: 20rem;
+}
+.tabletEvenHeight {
+  height: 18rem;
+  margin-bottom: 0rem;
+}
+.tabletOddHeight {
+  height: 15rem;
+}
+.tabletOddHeightMarginTop {
+  margin-top: -2.5rem;
+}
+.background {
+  padding: 4rem;
+  .contentMobile {
+    margin-top: 5rem;
+  }
+  .content {
+    margin-top: 5rem;
+    display: grid;
+  }
+  @media only screen and (max-width: $mobile) {
+  }
+  @media only screen and (max-width: $desktop) and (min-width: $tablet) {
+    .content {
+      grid-template-columns: auto auto;
+      column-gap: 1.5rem;
+    }
+  }
+  @media only screen and (min-width: $desktop) {
+    .content {
+      grid-template-columns: auto auto auto;
+      column-gap: 1.5rem;
+    }
+  }
+}
